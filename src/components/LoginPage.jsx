@@ -37,11 +37,13 @@ const [wrong, setWrong] = useState(false)
 
         <MDBCol col='4' md='6'>
 
-          <div className="d-flex flex-row align-items-center justify-content-center">
-
-            <p className="lead fw-normal mb-0 me-3">Sign in with</p>
-
-            <MDBBtn floating size='md' tag='a' className='me-2'>
+           <div className="d-flex flex-row align-items-center justify-content-center">
+<div>
+          
+            <h1 className="lead fw-normal mb-0 me-3">MARINA </h1>
+            <p className="lead fw-normal mb-0 me-3">Sign In Now </p>
+            </div>
+            {/* <MDBBtn floating size='md' tag='a' className='me-2'>
               <MDBIcon fab icon='facebook-f' /> facebook
             </MDBBtn>
 
@@ -51,12 +53,12 @@ const [wrong, setWrong] = useState(false)
 
             <MDBBtn floating size='md' tag='a'  className='me-2'>
               <MDBIcon fab icon='linkedin-in' /> linkedin
-            </MDBBtn>
+            </MDBBtn> */}
 
-          </div>
+          </div> 
 
           <div className="divider d-flex align-items-center my-4">
-            <p className="text-center fw-bold mx-3 mb-0">Or</p>
+            <p className="text-center fw-bold mx-3 mb-0"></p>
           </div>
 
           <MDBInput wrapperClass='mb-4' onChange={e => setName(e.target.value)} label='Name' id='formControlLg' type='email' size="lg" />
