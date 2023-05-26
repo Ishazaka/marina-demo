@@ -1,18 +1,18 @@
 import React from 'react'
+import Navbar from './Navbar'
 
-function HomePage() {
+function HomePage({setLogin}) {
   return (
     <div>
-
+   
+ <Navbar setLogin={setLogin}/>
       <header className="App-header">
       <img style={{width: "240px"}} src="/marinalogo.png" />
        <h3> Coming Soon...</h3>
   
       </header>
 
-    <div className='bg-section'>
-       hello how are
-    </div>
+
     </div>
   )
 }
