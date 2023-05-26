@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import HomePage from './components/HomePage';
+
+;
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <h1>Marina</h1>
-       <h3>A call center for Startup to help founder interect with their users</h3>
-       <h3>Marina Coming Soon...</h3>
-  
-      </header>
+ 
+   <HomePage />
     </div>
   );
 }
