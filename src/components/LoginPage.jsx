@@ -5,12 +5,17 @@ import { useState } from 'react';
 function LoginPage({setLogin}) {
 const [name, setName] = useState("")
 const [password, setPassword] = useState("")
+const [wrong, setWrong] = useState(false)
+
   
 
 
   function CheckValidation(){
      if(name == "marina" && password == "@123" ){
      setLogin(true)
+     setWrong(false)
+     }else{
+      setWrong(true)
      }
   }
 
@@ -20,7 +25,10 @@ const [password, setPassword] = useState("")
 
    
     <MDBContainer fluid className="container-box p-3 my-3">
+     
 <div class="conatiner-innerbox">
+  {wrong ? 
+<button className='btn btn-danger mb-4'>Please provide a valid name or password</button> : "" }
       <MDBRow>
 
         <MDBCol col='10' md='6'>
